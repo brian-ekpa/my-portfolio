@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard. Built for scalability and performance.",
+      "icon": "🚀",
+      "tags": ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
+      "liveUrl": "https://replit.com/@ikssagest/Chika-Portfolio",
+      "sourceUrl": "#",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Real-Time Chat App",
+      "description": "WebSocket-powered messaging with end-to-end encryption, file sharing, and video calls.",
+      "icon": "💬",
+      "tags": ["React", "Socket.io", "MongoDB"],
+      "liveUrl": "#",
+      "sourceUrl": "#",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Analytics Dashboard",
+      "description": "Interactive data visualization platform with customizable widgets and real-time updates.",
+      "icon": "📊",
+      "tags": ["TypeScript", "D3.js", "Redis"],
+      "liveUrl": "#",
+      "sourceUrl": "#",
+      "featured": false
+    }
+  ]
+}

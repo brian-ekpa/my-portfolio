@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cryzen - Full Stack Developer Portfolio">
+    <title>Cryzen | Full Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="logo.svg" alt="Cryzen Logo" class="logo-img">
+                <span>CRYZEN</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">CRYZEN</h1>
+                <h2 class="title">Full Stack Developer</h2>
+                <p class="tagline">Crafting digital experiences with cutting-edge technology</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">const</span> developer = {
+  <span class="property">name</span>: <span class="string">"Cryzen"</span>,
+  <span class="property">role</span>: <span class="string">"Full Stack Dev"</span>,
+  <span class="property">passion</span>: <span class="string">"Building the future"</span>,
+  <span class="property">status</span>: <span class="string">"Ready to create"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Accordion Style -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">&lt;</span>
+                Expertise
+                <span class="title-accent">/&gt;</span>
+            </h2>
+            <p class="section-subtitle">Click to explore technologies I work with</p>
+
+            <div class="skills-accordion">
+                <!-- Frontend Skills -->
+                <div class="accordion-item" data-category="frontend">
+                    <button class="accordion-header">
+                        <div class="accordion-header-content">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                                    <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                    <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                                </svg>
+                            </div>
+                            <div class="accordion-title">
+                                <h3>Frontend Development</h3>
+                                <p>Creating stunning, interactive user interfaces</p>
+                            </div>
+                        </div>
+                        <div class="accordion-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">⚛️</div>
+                                <h4>React</h4>
+                                <p>Component-based UI development with hooks and state management</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">▲</div>
+                                <h4>Next.js</h4>
+                                <p>Server-side rendering, static generation, and API routes</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">📜</div>
+                                <h4>JavaScript</h4>
+                                <p>ES6+, async programming, and modern JS patterns</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🔷</div>
+                                <h4>TypeScript</h4>
+                                <p>Type-safe development for scalable applications</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🎨</div>
+                                <h4>CSS/SASS</h4>
+                                <p>Responsive layouts, animations, and modern styling</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">💨</div>
+                                <h4>Tailwind CSS</h4>
+                                <p>Utility-first CSS for rapid UI development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="accordion-item" data-category="backend">
+                    <button class="accordion-header">
+                        <div class="accordion-header-content">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <div class="accordion-title">
+                                <h3>Backend Development</h3>
+                                <p>Building robust and scalable server solutions</p>
+                            </div>
+                        </div>
+                        <div class="accordion-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">🟢</div>
+                                <h4>Node.js</h4>
+                                <p>Scalable server-side JavaScript runtime</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🚂</div>
+                                <h4>Express.js</h4>
+                                <p>Fast, minimalist web framework for Node.js</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🐍</div>
+                                <h4>Python</h4>
+                                <p>Backend services, scripting, and automation</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🔗</div>
+                                <h4>REST APIs</h4>
+                                <p>Designing and implementing RESTful services</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🔐</div>
+                                <h4>Authentication</h4>
+                                <p>JWT, OAuth, and secure user management</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">☁️</div>
+                                <h4>Cloud Services</h4>
+                                <p>AWS, Vercel, and serverless architectures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="accordion-item" data-category="database">
+                    <button class="accordion-header">
+                        <div class="accordion-header-content">
+                            <div class="category-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <div class="accordion-title">
+                                <h3>Database Management</h3>
+                                <p>Efficient data storage and retrieval solutions</p>
+                            </div>
+                        </div>
+                        <div class="accordion-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">🍃</div>
+                                <h4>MongoDB</h4>
+                                <p>NoSQL database for flexible data modeling</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🐘</div>
+                                <h4>PostgreSQL</h4>
+                                <p>Advanced relational database with powerful features</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🗄️</div>
+                                <h4>MySQL</h4>
+                                <p>Reliable relational database management</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🔥</div>
+                                <h4>Firebase</h4>
+                                <p>Real-time database and backend services</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">⚡</div>
+                                <h4>Redis</h4>
+                                <p>In-memory data structure store for caching</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🔄</div>
+                                <h4>Prisma</h4>
+                                <p>Modern ORM for type-safe database access</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Bento Grid (Loaded from data/projects.json) -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">&lt;</span>
+                Projects
+                <span class="title-accent">/&gt;</span>
+            </h2>
+            <p class="section-subtitle">Featured work showcasing my skills</p>
+
+            <!-- Projects are loaded dynamically from data/projects.json -->
+            <div class="bento-grid" id="projects-grid">
+                <!-- Projects will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">&lt;</span>
+                Let's Connect
+                <span class="title-accent">/&gt;</span>
+            </h2>
+            <p class="section-subtitle">Ready to start a project together?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>hello@cryzen.dev</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/cryzen</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🐙</div>
+                        <h4>GitHub</h4>
+                        <p>github.com/cryzen</p>
+                    </div>
+                </div>
+                <div class="cta-message">
+                    <h3>Let's build something amazing together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <a href="mailto:hello@cryzen.dev" class="btn btn-primary">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Cryzen. Crafted with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
